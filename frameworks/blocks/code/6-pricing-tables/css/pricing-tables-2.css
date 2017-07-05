@@ -1,0 +1,165 @@
+/*
+Template Name: Bootstrap Starter Kit - Pricing Tables 2
+Description: Business Startup & Prototyping HTML Framework
+Author: Theme Spirit
+Author URI: http://www.creativemarket.com/theme_spirit
+
+Version: 1.0
+
+*/
+
+
+/* DEMO PAGE STYLES - YOU DON'T NEED TO COPY THESE */
+.demo-title h2 { margin: 0; color: #ffffff; }
+/* END OF DEMO STYLES */
+
+
+
+/*	Pricing Table 2
+/*----------------------------------------------------*/
+
+.pricing-table-2 .tables-row {
+	margin-top: 40px;
+}
+
+.pricing-table-2 .price-block {
+	max-width: 500px;
+	margin: 0 auto 40px auto;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.pricing-table-2 .price-block header {
+	background: #2F4052;
+	text-align: center;
+	padding: 50px;
+}
+
+.pricing-table-2 .price-block h2 {
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	color: #FFF;
+}
+
+.pricing-table-2 .price-block .btn {
+	margin-bottom: 0;
+}
+
+.pricing-table-2 .price-block .price {
+	margin-bottom: 15px;
+	color: #ffffff;
+}
+
+.pricing-table-2 .price-block .price * {
+	font-family: 'Lato', sans-serif;
+	line-height: 100%;
+}
+
+.pricing-table-2 .price-block .price .amount {
+	font-size: 120px;
+	font-weight: 900;
+}
+
+.pricing-table-2 .price-block .price .currency {
+	position: relative;
+	top: 16px;
+	font-size: 24px;
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+.pricing-table-2 .price-block .price .period {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.pricing-table-2 .price-block .features {
+	background: #F5F7FA;
+	padding: 25px 35px;
+	border: 1px solid #E6E9ED;
+	border-top: none;
+	border-bottom-width: 2px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	margin-top: 0 !important;
+}
+
+.pricing-table-2 .price-block .features li {
+	padding: 15px 0;
+ 	border-top: 1px solid #BCC7D1;
+	list-style: none;
+}
+
+.pricing-table-2 .price-block .features li:first-child {
+	border: none;
+}
+
+.pricing-table-2 .price-block .features li i {
+	margin-right: 10px;
+}
+
+.pricing-table-2 .col-4 .price-block header {
+	padding: 40px;
+}
+
+.pricing-table-2 .col-4 .price-block h2 {
+	font-size: 18px;
+}
+
+.pricing-table-2 .col-4 .price-block .price .amount {
+	font-size: 90px;
+}
+
+.pricing-table-2 .col-4 .price-block .features {
+	padding: 20px 30px;
+}
+
+/* Ribbon & Colors */
+.ribbon {
+	position: absolute;
+	top: -4px;
+	right: 11px;
+	width: 82px;
+	height: 82px;
+	overflow: hidden;
+	z-index: 10
+}
+
+.red-hot { background: url("../images/ribbons/red-hot.png") 0 0 no-repeat; }
+.best-value { background: url("../images/ribbons/best-value.png") 0 0 no-repeat; }
+.super-cool { background: url("../images/ribbons/super-cool.png") 0 0 no-repeat; }
+.new { background: url("../images/ribbons/new.png") 0 0 no-repeat; }
+.premium { background: url("../images/ribbons/premium.png") 0 0 no-repeat; }
+.exclusive { background: url("../images/ribbons/exclusive.png") 0 0 no-repeat; }
+.popular { background: url("../images/ribbons/popular.png") 0 0 no-repeat; }
+.five-stars { background: url("../images/ribbons/five-stars.png") 0 0 no-repeat; }
+
+
+
+/*	Pricing Table 2 MEDIA QUERIES
+/*----------------------------------------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+	
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+	
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+	
+	
+}
+

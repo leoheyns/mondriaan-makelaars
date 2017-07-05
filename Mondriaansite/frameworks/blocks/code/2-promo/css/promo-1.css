@@ -1,0 +1,194 @@
+/*
+Template Name: Bootstrap Starter Kit - Promo Blocks
+Description: Business Startup & Prototyping HTML Framework
+Author: Theme Spirit
+Author URI: http://www.creativemarket.com/theme_spirit
+
+Version: 1.0
+
+*/
+
+
+/* DEMO PAGE STYLES - YOU DON'T NEED TO COPY THESE */
+header {width: 100%; background-color: #2c3e50; }
+header .brand-img {max-width: 150px; padding: 25px 0 25px 20px; margin-right: 40px;}
+header h2 {padding-top: 12px;}
+.demo-title h2 { margin: 0; color: #ffffff; }
+/* END OF DEMO STYLES */
+
+
+
+/*	PROMO BLOCK 1
+/*----------------------------------------------------*/
+
+.promo-1 {
+	background: url("../images/water-bg.jpg") center top no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 140px 0;
+}
+
+.promo-1 .video-wrapper {
+	max-width: 600px;
+	margin: 20px auto 0 auto;
+}
+
+
+/*	PROMO BLOCK 1 MEDIA QUERIES
+/*----------------------------------------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+		
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+	
+	
+}
+
+
+
+
+/*	PROMO BLOCK 2
+/*----------------------------------------------------*/
+
+.promo-2 h1 {
+	font-size: 60px;
+}
+
+.promo-2 h1, .promo-2 h2 {
+	color: #ffffff;
+}
+
+.promo-2 .countDown {
+	margin: 80px auto 40px auto;
+	font-size: 0;
+}
+
+.promo-2 .countDown .countDown-input {
+	display: none;
+}
+
+.promo-2 .countDown .countDown-wrap {
+	width: 185px;
+	margin: 0 15px 20px;
+	display: inline-block;
+	background: rgba(133, 214, 222, 0.1);
+	border-left: 4px solid #F39C12;
+	border-right: 4px solid #F39C12;
+}
+
+.promo-2 .countDown .digits {
+	display: block;
+	margin-top: 34px;
+	margin-bottom: -6px;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 120px;
+	color: #ffffff;
+}
+
+.promo-2 .countDown .digits-label {
+	margin-bottom: 18px;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+
+/*	PROMO BLOCK 2 MEDIA QUERIES
+/*----------------------------------------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+		
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+	
+	
+}
+
+
+
+
+/*	PROMO BLOCK 3
+/*----------------------------------------------------*/
+
+.promo-3 {
+	background: url("../images/star-sky.jpg") center top no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 140px 0;
+}
+
+.promo-3 h1 {
+	font-size: 60px;
+	color: #ffffff;
+}
+
+.promo-3 h2 {
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.promo-3 a {
+	margin-top: 40px;
+}
+
+
+/*	PROMO BLOCK 3 MEDIA QUERIES
+/*----------------------------------------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+		
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+	
+	
+}
+
+
+

@@ -1,0 +1,581 @@
+/*
+Template Name: Bootstrap Starter Kit - Content Blocks 2
+Description: Business Startup & Prototyping HTML Framework
+Author: Theme Spirit
+Author URI: http://www.creativemarket.com/theme_spirit
+
+Version: 1.0
+
+*/
+
+
+/* DEMO PAGE STYLES - YOU DON'T NEED TO COPY THESE */
+header {width: 100%; background-color: #2c3e50; }
+header .brand-img {max-width: 150px; padding: 25px 0 25px 20px; margin-right: 40px;}
+header h2 {padding-top: 12px;}
+.demo-title h2 { margin: 0; color: #2c3e50; }
+/* END OF DEMO STYLES */
+
+
+
+/*	CONTENT BLOCK 2-1
+/*----------------------------------------------------*/
+
+.content-2-1 .btn-outline {
+	margin-bottom: 30px;
+}
+
+.content-2-1 h2 {
+	color: #ffffff;
+}
+
+
+/*	CONTENT BLOCK 2-1 MEDIA QUERIES
+/*----------------------------------------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+		
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+	
+	
+}
+
+
+
+
+/*	CONTENT BLOCK 2-2
+/*----------------------------------------------------*/
+
+.content-2-2 h3 { font-weight: 300; }
+.content-2-2 h3, .content-2-2 p { color: #ffffff; }
+
+.content-2-2 .icon-outline {
+	height: 150px;
+	width: 150px;
+	max-width: 100%;
+	border: 4px solid rgba(255,255,255,0.6);
+	border-radius: 50%;
+	-o-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	margin: 0 auto 50px;
+	-webkit-transition: box-shadow 0.2s;
+	-moz-transition: box-shadow 0.2s;
+	transition: box-shadow 0.2s;
+}
+
+.content-2-2 .icon-outline:hover {
+	box-shadow: 0 0 0 14px rgba(255,255,255,0.4);
+	color: #fff;
+}
+
+.content-2-2 .icon-outline span {
+	line-height: 150px;
+	color: #fff;
+	font-size: 55px;
+}
+
+
+/*	CONTENT BLOCK 2-2 MEDIA QUERIES
+/*----------------------------------------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+		
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+	
+	
+}
+
+
+
+
+/*	CONTENT BLOCK 2-3
+/*----------------------------------------------------*/
+
+.content-2-3 h2 {
+	color: #ffffff;
+	margin: 0;
+}
+
+
+
+/*	CONTENT BLOCK 2-3 MEDIA QUERIES
+/*----------------------------------------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+		
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+	
+	
+}
+
+
+
+
+/*	CONTENT BLOCK 2-4
+/*----------------------------------------------------*/
+
+.content-2-4 i {
+	clear: both;
+}
+
+#quote-carousel {
+
+}
+
+.content-2-4 h1, .content-2-4 p {
+	color: #ffffff;
+    font-size: 44px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    line-height: 1.1;
+}
+
+
+
+/*	CONTENT BLOCK 2-4 MEDIA QUERIES
+/*----------------------------------------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+		
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+	
+	
+}
+
+
+
+/*	CONTENT BLOCK 2-5
+/*----------------------------------------------------*/
+
+/* Light */
+.content-2-5-light h2 {
+	color: #333333;
+}
+
+/* Dark */
+.content-2-5-dark h2 {
+	color: #ffffff;
+}
+
+.content-2-5-dark h2 a {
+	color: #f1c40f;
+}
+
+.content-2-5-dark h2 a:hover {
+	color: #ffffff;
+}
+
+
+/*	CONTENT BLOCK 2-5 MEDIA QUERIES
+/*----------------------------------------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+		
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+	
+	
+}
+
+
+
+
+/*	CONTENT BLOCK 2-6
+/*----------------------------------------------------*/
+
+.content-2-6 .btn-outline {
+	margin: 1.8em;
+}
+
+.content-2-6 h2 {
+	font-weight: 700;
+	line-height: 1.4em;
+	color: #ffffff;
+}
+
+
+/*	CONTENT BLOCK 2-6 MEDIA QUERIES
+/*----------------------------------------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+		
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+	
+	
+}
+
+
+
+
+/*	CONTENT BLOCK 2-7
+/*----------------------------------------------------*/
+
+.content-2-7 {
+	background: url("../images/dark-logs-bg.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.content-2-7 .counter-icon {
+	font-size: 5em;
+	margin-top: 30px;
+	color: #f39c12;
+}
+
+.content-2-7 .counter, .content-2-7 .counter-text {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #f39c12;
+}
+
+.content-2-7 .counter-text {
+	font-size: 20px;
+}
+
+.content-2-7 .counter {
+	font-size: 44px;
+	color: #fff;
+}
+
+.content-2-7 .underlined-title h1, .content-2-7 .underlined-title h2 {
+	color: #fff;
+}
+
+
+/*	CONTENT BLOCK 2-7 MEDIA QUERIES
+/*----------------------------------------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+		
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+	
+	
+}
+
+
+
+
+/*	CONTENT BLOCK 2-8
+/*----------------------------------------------------*/
+
+.content-2-8 {
+	padding: 0px;
+	position: relative;
+}
+
+.content-2-8 .image-container {
+	position: absolute;
+	height: 100%;
+	padding: 0px;
+	top: 0px;
+}
+
+.content-2-8 .image-container .background-image-holder {
+	background: url('../images/gold-iphone.png') no-repeat bottom center;
+	
+	height: 100%;
+}
+
+.content-2-8 .content {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.content-2-8 h1 {
+	font-weight: 600;
+	font-size: 56px;
+}
+
+.content-2-8 h3 {
+	margin-top: 0;
+	font-weight: 600;
+}
+
+.content-2-8 h1, .content-2-8 h3, .content-2-8 .lead, .content-2-8 p, .content-2-8 span {
+	color: #ffffff;
+}
+
+
+/*	CONTENT BLOCK 2-8 MEDIA QUERIES
+/*----------------------------------------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+	
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+	
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+	
+	
+}
+
+
+
+
+/*	CONTENT BLOCK 2-9
+/*----------------------------------------------------*/
+
+.content-2-9 {
+	background: #ccc;
+	min-height: 260px;
+	position: relative;
+}
+
+.content-2-9 .project {
+	height: 260px;
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+}
+
+.content-2-9 .project img {
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.content-2-9 .project .background-image-holder {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-size: cover !important;
+	z-index: 0;
+	background-position: 50% 50% !important;
+}
+
+
+.content-2-9 .project .hover-state {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	background-color: rgba(44, 62, 80, 0.6);
+	text-align: center;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
+	opacity: 0;
+	padding: 0 25px;
+}
+
+.content-2-9 .project:hover .hover-state {
+	opacity: 1;
+}
+
+.content-2-9 .project .hover-state h3 {
+	color: #fff;
+	margin-top: 40px;
+	margin-bottom: 8px;
+}
+
+.content-2-9 .project .hover-state p {
+	color: #fff;
+}
+
+.content-2-9 .project .hover-state .align-vertical {
+	-webkit-transform: translate3d(0, 20px, 0);
+	-moz-transform: translate3d(0, 20px, 0);
+	transform: translate3d(0, 20px, 0);
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
+	opacity: 0;
+}
+
+.content-2-9 .project:hover .align-vertical {
+	-webkit-transform: translate3d(0, 0px, 0);
+	-moz-transform: translate3d(0, 0px, 0);
+	transform: translate3d(0, 0px, 0);
+	opacity: 1;
+}
+
+
+/*	CONTENT BLOCK 2-9 MEDIA QUERIES
+/*----------------------------------------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+	.content-2-9 {
+		min-height: 520px;
+	}
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+	.content-2-9 {
+		min-height: 260px;
+	}
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+	
+	
+}
+
+
+
+
+/*	CONTENT BLOCK 2-10
+/*----------------------------------------------------*/
+
+.content-2-10 .border-box {
+	border: 4px solid #BDC3C7;
+	padding: 20px 40px;
+}
+
+.content-2-10 .border-box h2 {
+	
+}
+
+
+
+/*	CONTENT BLOCK 2-10 MEDIA QUERIES
+/*----------------------------------------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+	
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+	
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+	
+	
+}

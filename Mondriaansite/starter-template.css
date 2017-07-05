@@ -1,0 +1,234 @@
+.body
+{
+    padding-top: 50px;
+}
+
+.tab{
+	padding:10px;
+	
+}
+
+.starter-template
+{
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.container
+{
+    margin-top: 16px;
+	
+}
+
+.navbar
+{
+    background-color: #ffffff;
+}
+
+.form
+{
+	display: inline;
+	
+}
+
+.menuknop
+{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #ffffff;
+	
+}
+
+.menuknop:hover
+{
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #000000;
+}
+
+.dropdownknop
+{
+	background-color: #ffffff;
+	color: #000000;
+	padding: 6px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+	border: none;
+}
+
+.dropdownknop:hover
+{
+	text-decoration: underline;
+}
+
+.slogan
+{
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    height: 510px;
+    font-size: 70px;
+    line-height: 500px;
+    text-transform: none;
+    text-align: center;
+    font-variant: normal;
+    font-weight: bolder;
+	
+}
+
+.afbeelding
+{
+	
+}
+
+.thumbnail
+{
+    width: 64px;
+    border-style: none;
+    margin-top: -5px;
+}
+
+.logo
+{
+}
+
+.footer
+{
+    color: #000000;
+    background-color: #ffffff;
+    font-family: 'Jim Nightshade', cursive;
+    font-size: 100px;
+    font-weight: 100;
+    font-style: normal;
+	
+}
+
+.voet
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: center;
+	
+}
+
+.mediarij
+{
+    margin-left: 2000p;
+    text-align: center;
+	
+}
+
+.instagram
+{
+    background-image: url('Instagram-Icon.png');
+}
+
+.youtube
+{
+    background-image: url('YouTube-Icon.png');
+}
+
+.facebook
+{
+    background-image: url('Facebook-Icon.png');
+}
+
+.twitter
+{
+    background-image: url('Twitter-Icon.png');
+}
+
+.media
+{
+    background-size: 50px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin: 20px 10px;
+    background-color: #ffffff;
+	
+}
+
+.homeknop
+{
+}
+
+.btn-group
+{
+    margin-top: -8px;
+	
+}
+
+.paginatitel
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #e00000;
+    margin-top: 80px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.kop1
+{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #696969;
+    margin-bottom: -4px;
+    margin-top: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.inleiding
+{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.contactform
+{
+    margin-bottom: -5px;
+    margin-top: -5px;
+}
+
+.adres
+{
+    font-size: 20px;
+    text-align: right;
+}
+
+.verzendknop
+{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+}
+
+.verzendknop:hover
+{
+    background-color: #eeeeee;
+}
+

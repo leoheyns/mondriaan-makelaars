@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" wp-site wp-site-is-master-page wp-site-theme-name="Test" wp-site-theme-slug="test" wp-site-themes-folder="/Users/Matjaz/Dropbox/Development/DVWeb/DV/Pinegrow/lab/PinegrowBlocks/WPExport">
+    <head>
+        <meta charset="utf-8">
+        <title>BSKIT - Bootstrap Starter kit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="bskit, bootstrap starter kit" />
+        <meta name="description" content="Business Startup & Prototyping Toolkit for Bootstrap" />
+        <link rel="shortcut icon" href="../common/ico/favicon.png">
+        <!-- Core CSS -->
+        <link href="../common/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../common/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Style Library -->
+        <link href="../common/css/style-library-1.css" rel="stylesheet">         
+        <!-- Block Styles -->
+        <link href="css/gallery-2.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Start Creating Here -->
+        <!-- DIVIDING SPACE ( DON'T COPY THIS PART ) -->
+        <div class="content-block bg-deepocean">
+            <div class="container demo-title">
+                <h2 class="pull-left">Gallery 2</h2>
+                <h2 class="pull-right">Animated Hover Effect</h2>
+            </div>
+        </div>
+        <!--// END DIVIDING SPACE -->
+        <!-- Start 4 Column Gallery -->
+        <section class="content-block gallery-2" wp-cz-section="blocks_gallery_2" wp-cz-section-title="Gallery 2" wp-cz-control="blocks_gallery_2_source" wp-cz-control-label="'Content source (post with gallery)'" wp-cz-control-type="custom" wp-cz-control-type-custom="WP_BlocksContentDropdown_Customize_Control" wp-cz-control-section="blocks_gallery_2">
+            <php>
+            $gallery = blocks_get_gallery( get_theme_mod( 'blocks_gallery_2_source' ) );
+            </php>
+            <div class="container">
+                <div class="underlined-title">
+                    <h1 wp-cz-control="blocks_gallery_2_title" wp-cz-control-label="Title" wp-cz-control-section="blocks_gallery_2" wp-cz-theme-mod="blocks_gallery_2_title">A selection of our work</h1>
+                    <hr>
+                    <h2 wp-cz-control="blocks_gallery_2_subtitle" wp-cz-control-label="Subtitle" wp-cz-control-type="textarea" wp-cz-control-section="blocks_gallery_2" wp-cz-theme-mod="blocks_gallery_2_subtitle">Hand-picked just for you</h2>
+                </div>
+                <div class="row">
+                    <php>foreach($gallery['images'] as $image) :</php>
+                    <div class="grid col-md-4 col-sm-6 col-xs-12">
+                        <figure class="effect-lily">
+                            <img src="http://placehold.it/800x600" alt="img01" wp-call-function="$image['thumbnail'][0]" wp-call-function-echo="true" wp-call-function-set="attr" wp-call-function-set-attr="src" wp-call-function-2="$image['alt']" wp-call-function-echo-2="true" wp-call-function-2-set="attr" wp-call-function-2-set-attr="alt" />
+                            <figcaption>
+                                <h2 wp-call-function="$image['title']" wp-call-function-set="content" wp-call-function-echo="true">Item <span>1</span></h2>
+                                <p wp-call-function="$image['description']" wp-call-function-echo="true" wp-call-function-set="content">Beautifully subtle animated hover effect for your gallery</p>
+                                <a href="#" wp-call-function="$image['link']" wp-call-function-echo="true" wp-call-function-set="attr" wp-call-function-set-attr="href">View more</a>
+                            </figcaption>                             
+                        </figure>
+                    </div>
+                    <php>endforeach;</php>
+                    <div class="grid col-md-4 col-sm-6 col-xs-12" wp-no-export>
+                        <figure class="effect-lily">
+                            <img src="http://placehold.it/800x600" alt="img01" />
+                            <figcaption>
+                                <h2>Item <span>2</span></h2>
+                                <p>Beautifully subtle animated hover effect for your gallery</p>
+                                <a href="#">View more</a>
+                            </figcaption>                             
+                        </figure>
+                    </div>
+                    <div class="grid col-md-4 col-sm-6 col-xs-12" wp-no-export>
+                        <figure class="effect-lily">
+                            <img src="http://placehold.it/800x600" alt="img01" />
+                            <figcaption>
+                                <h2>Item <span>3</span></h2>
+                                <p>Beautifully subtle animated hover effect for your gallery</p>
+                                <a href="#">View more</a>
+                            </figcaption>                             
+                        </figure>
+                    </div>
+                    <div class="grid col-md-4 col-sm-6 col-xs-12" wp-no-export>
+                        <figure class="effect-lily">
+                            <img src="http://placehold.it/800x600" alt="img01" />
+                            <figcaption>
+                                <h2>Item <span>4</span></h2>
+                                <p>Beautifully subtle animated hover effect for your gallery</p>
+                                <a href="#">View more</a>
+                            </figcaption>                             
+                        </figure>
+                    </div>
+                    <div class="grid col-md-4 col-sm-6 col-xs-12" wp-no-export>
+                        <figure class="effect-lily">
+                            <img src="http://placehold.it/800x600" alt="img01" />
+                            <figcaption>
+                                <h2>Item <span>5</span></h2>
+                                <p>Beautifully subtle animated hover effect for your gallery</p>
+                                <a href="#">View more</a>
+                            </figcaption>                             
+                        </figure>
+                    </div>
+                    <div class="grid col-md-4 col-sm-6 col-xs-12" wp-no-export>
+                        <figure class="effect-lily">
+                            <img src="http://placehold.it/800x600" alt="img01" />
+                            <figcaption>
+                                <h2>Item <span>6</span></h2>
+                                <p>Beautifully subtle animated hover effect for your gallery</p>
+                                <a href="#">View more</a>
+                            </figcaption>                             
+                        </figure>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!--// End Gallery 2 -->
+        <!-- DIVIDING SPACE ( DON'T COPY THIS PART ) -->
+        <div class="content-block bg-deepocean">
+            <div class="container demo-title">
+                <h2 class="pull-left">Gallery 2</h2>
+                <h2 class="pull-right">END</h2>
+            </div>
+        </div>
+        <!--// END DIVIDING SPACE -->
+        <!-- Scripts at the end... you know the score! -->
+        <!-- Core Scripts -->
+        <script type="text/javascript" src="../common/js/jquery-1.11.1.min.js"></script>         
+        <script type="text/javascript" src="../common/js/bootstrap.min.js"></script>
+        <!-- Vendor Scripts -->
+        <!-- Theme Scripts -->
+        <script type="text/javascript" src="../common/js/bskit-scripts.js"></script>
+    </body>
+</html>

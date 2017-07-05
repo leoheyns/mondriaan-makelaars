@@ -1,0 +1,25 @@
+<p>Select the page that will be used to display the partial page and set the selector of the element on that page where the partial page will be inserted.</p>
+<form role="form">
+    <div class="form-group">
+        <label class="control-label" for="exampleInputEmail1">Show in page:</label>
+        <div class="input-group">
+            <input type="text" class="form-control input-url" placeholder="relative or absolute url (file:// or http://)">
+            <a href="#" class="input-group-addon" title="Select file..."><i class="fa fa-folder-open text-muted"></i></a> 
+        </div>
+        <p class="text-danger error">A block of help text.</p>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="exampleInputPassword1">Selector for the container element:</label>
+        <div class="input-group">
+            <input type="text" class="form-control input-selector" placeholder="for example, div.content">
+            <a href="#" class="input-group-addon" title="Select container element..."><i class="fa text-muted fa-crosshairs"></i></a> 
+        </div>
+        <p class="text-danger error">A block of help text.</p>
+        <p class="text-muted"><small>#ids, .classes, [attributes], tags and &gt; can be used in the selector. For example, div.content &gt; .main. Pseudo selectors (:something) are not supported at the moment.</small></p>
+    </div>
+    <div class="checkbox"> 
+        <label class="control-label"> 
+            <input type="checkbox" value="" class="auto-open">        Always open this file as partial with these settings
+        </label>             
+    </div>
+</form>

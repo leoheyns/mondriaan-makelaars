@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" wp-site wp-site-is-master-page wp-site-theme-name="Blocks Blog Test" wp-site-theme-slug="blogtest" wp-site-themes-folder="/Users/Matjaz/Dropbox/Development/DVWeb/DV/Pinegrow/lab/pgwordpress/wp-content/themes/blockblogtest">
+    <head>
+        <meta charset="utf-8">
+        <title>BSKIT - Bootstrap Starter kit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="bskit, bootstrap starter kit" />
+        <meta name="description" content="Business Startup & Prototyping Toolkit for Bootstrap" />
+        <link rel="shortcut icon" href="../common/ico/favicon.png">
+        <!-- Core CSS -->
+        <link href="../common/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../common/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Style Library -->
+        <link href="../common/css/style-library-1.css" rel="stylesheet">         
+        <!-- Block Styles -->
+        <link href="css/blog-1.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- DIVIDING SPACE ( DON'T COPY THIS PART ) -->
+        <div class="content-block bg-deepocean">
+            <div class="container demo-title">
+                <h2 class="pull-left">Blog 1</h2>
+                <h2 class="pull-right">Story Posts Blog</h2>
+            </div>
+        </div>
+        <!--// END DIVIDING SPACE -->
+        <!-- Start Story Posts Blog -->
+        <div class="content-block blog-1" wp-cz-section="blocks_blog_1" wp-cz-section-title="Blog 1">
+            <div class="container text-center">
+                <div class="underlined-title">
+                    <h1 wp-cz-control="blocks_blog_1_title" wp-cz-control-label="Title" wp-cz-control-section="blocks_blog_1" wp-cz-theme-mod="blocks_blog_1_title">Our Blog</h1>
+                    <hr>
+                    <h2 wp-cz-control="blocks_blog_1_subtitle" wp-cz-control-label="Subtitle" wp-cz-control-type="textarea" wp-cz-control-section="blocks_blog_1" wp-cz-theme-mod="blocks_blog_1_subtitle">The latest news & posts</h2>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1" wp-loop>
+                    <div class="post" wp-loop-item>
+                        <h2><a href="#" wp-the-title wp-href="post_permalink">Malesuada Lorem Inceptos</a></h2>
+                        <img class="img-responsive" src="http://placehold.it/1000x300" wp-the-post-thumbnail="large">
+                        <p wp-the-excerpt>Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula
+					ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="">
+                            <a href="#" class="btn btn-lg btn-primary" wp-href="post_permalink">Read More</a>
+                            <p class="small text-muted text-uppercase">POSTED BY <a href="#" wp-the-author-link>ADMIN</a> IN <a href="#" wp-call-function="blocks_the_category()">GENERAL</a> ON <a href="#" wp-the-date>FEBRUARY 31, 2025</a></p>
+                        </div>
+                    </div>
+                    <hr wp-loop-add>
+                    <div class="post" wp-loop-skip data-pg-collapsed>
+                        <h2><a href="#">Malesuada Lorem Inceptos</a></h2>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img class="img-responsive" src="http://placehold.it/1000x500">
+                            </div>
+                            <div class="col-sm-6">
+                                <img class="img-responsive" src="http://placehold.it/1000x500">
+                            </div>
+                        </div>
+                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula
+					ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-lg btn-primary">Read More</a>
+                            <p class="small text-muted">POSTED BY <a href="#">ADMIN</a> IN <a href="#">GENERAL</a> ON <a href="#">FEBRUARY 31, 2025</a></p>
+                        </div>
+                    </div>
+                    <hr wp-loop-skip>
+                    <div class="post" data-pg-collapsed wp-loop-skip>
+                        <h2><a href="#">Malesuada Lorem Inceptos</a></h2>
+                        <img class="img-responsive" src="http://placehold.it/1000x300">
+                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula
+					ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-lg btn-primary">Read More</a>
+                            <p class="small text-muted">POSTED BY <a href="#">ADMIN</a> IN <a href="#">GENERAL</a> ON <a href="#">FEBRUARY 31, 2025</a></p>
+                        </div>
+                    </div>
+                    <hr wp-loop-skip>
+                    <nav wp-bs-post-pagination wp-bs-pagination-prev="<span class=&quot;fa fa-angle-double-left&quot;></span>" wp-bs-pagination-next="<span class=&quot;fa fa-angle-double-right&quot;></span>">
+                        <ul class="pagination">
+                            <li class="disabled">
+                                <a href="#" aria-label="Previous"><span class="fa fa-angle-double-left"></span></a>
+                            </li>
+                            <li class="active">
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">5</a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Next"><span class="fa fa-angle-double-right"></span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /.col-sm-10 -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!--// End Story Posts Blog -->
+        <!-- DIVIDING SPACE ( DON'T COPY THIS PART ) -->
+        <div class="content-block bg-deepocean">
+            <div class="container demo-title">
+                <h2>End</h2>
+            </div>
+        </div>
+        <!--// END DIVIDING SPACE -->
+        <!-- Scripts at the end... you know the score! -->
+        <!-- Core Scripts -->
+        <script type="text/javascript" src="../common/js/jquery-1.11.1.min.js"></script>         
+        <script type="text/javascript" src="../common/js/bootstrap.min.js"></script>
+        <!-- Vendor Scripts -->
+        <!-- Theme Scripts -->
+        <script type="text/javascript" src="../common/js/bskit-scripts.js"></script>
+    </body>
+</html>

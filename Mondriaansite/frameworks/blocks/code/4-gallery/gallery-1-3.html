@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>BSKIT - Bootstrap Starter kit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="bskit, bootstrap starter kit" />
+        <meta name="description" content="Business Startup & Prototyping Toolkit for Bootstrap" />
+        <link rel="shortcut icon" href="../common/ico/favicon.png">
+        <!-- Core CSS -->
+        <link href="../common/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../common/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Style Library -->
+        <link href="../common/css/style-library-1.css" rel="stylesheet">         
+        <!-- Vendor Styles -->
+        <link href="css/magnific-popup.css" rel="stylesheet">
+        <!-- Block Styles -->
+        <link href="css/gallery-1.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Start Creating Here -->
+        <!-- DIVIDING SPACE ( DON'T COPY THIS PART ) -->
+        <div class="content-block bg-deepocean">
+            <div class="container demo-title">
+                <h2 class="pull-left">Gallery 1-3</h2>
+                <h2 class="pull-right">2 Columns with Filter</h2>
+            </div>
+        </div>
+        <!--// END DIVIDING SPACE -->
+        <!-- Start 2 Column Gallery -->
+        <section class="content-block gallery-1" wp-cz-section="blocks_gallery_1_3" wp-cz-section-title="Gallery 1-3" wp-cz-control="blocks_gallery_1_3_source" wp-cz-control-label="'Content source (post with gallery)'" wp-cz-control-type="custom" wp-cz-control-type-custom="WP_BlocksContentDropdown_Customize_Control" wp-cz-control-section="blocks_gallery_1_3">
+            <php>
+            $gallery = blocks_get_gallery( get_theme_mod( 'blocks_gallery_1_3_source' ) );
+            </php>
+            <div class="container">
+                <div class="underlined-title">
+                    <h1 wp-cz-control="blocks_gallery_1_3_title" wp-cz-control-label="Title" wp-cz-control-section="blocks_gallery_1_3" wp-cz-theme-mod="blocks_gallery_1_3_title">A selection of our work</h1>
+                    <hr>
+                    <h2 wp-cz-control="blocks_gallery_1_3_subtitle" wp-cz-control-label="Subtitle" wp-cz-control-type="textarea" wp-cz-control-section="blocks_gallery_1_3" wp-cz-theme-mod="blocks_gallery_1_3_subtitle">Hand-picked just for you</h2>
+                </div>
+                <ul class="filter">
+                    <li class="active">
+                        <a href="#" data-filter="*">All</a>
+                    </li>
+                    <php>foreach($gallery['tags'] as $tag_slug => $tag_name) :</php>
+                    <li>
+                        <a href="#" data-filter=".artwork" wp-call-function="$tag_name" wp-call-function-set="content" wp-call-function-echo="true" wp-call-function-2="'.'.$tag_slug" wp-call-function-2-set="attr" wp-call-function-2-set-attr="data-filter" wp-call-function-echo-2="true">Artwork</a>
+                    </li>
+                    <php>endforeach;</php>
+                    <li wp-no-export>
+                        <a href="#" data-filter=".creative">Creative</a>
+                    </li>
+                    <li wp-no-export>
+                        <a href="#" data-filter=".nature">Nature</a>
+                    </li>
+                    <li wp-no-export>
+                        <a href="#" data-filter=".outside">Outside</a>
+                    </li>
+                    <li wp-no-export>
+                        <a href="#" data-filter=".photography">Photography</a>
+                    </li>
+                </ul>
+                <!-- /.gallery-filter -->
+                <div class="row">
+                    <div class="isotope-gallery-container">
+                        <php>foreach($gallery['images'] as $image) :</php>
+                        <div class="col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="http://placehold.it/800x600" class="img-responsive" alt="1st gallery Thumb" wp-call-function="$image['thumbnail'][0]" wp-call-function-set="attr" wp-call-function-set-attr="src" wp-call-function-echo="true" wp-call-function-2="$image['thumbnail']['alt']" wp-call-function-echo-2="true" wp-call-function-2-set="attr" wp-call-function-2-set-attr="alt">
+                                    <div class="image-overlay"></div>
+                                    <a href="http://placehold.it/800x600" class="gallery-zoom" wp-call-function="$image['image'][0]" wp-call-function-set="attr" wp-call-function-set-attr="href" wp-call-function-echo="true" wp-call-function-2="$image['alt']" wp-call-function-echo-2="true" wp-call-function-2-set="attr" wp-call-function-2-set-attr="alt"><i class="fa fa-eye" alt="This is the title"></i></a>
+                                    <a href="#" class="gallery-link" wp-call-function="$image['link']" wp-call-function-set="attr" wp-call-function-set-attr="href" wp-call-function-echo="true" target="_blank"><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="gallery-details">
+                                    <h5 wp-call-function="$image['title']" wp-call-function-set="content" wp-call-function-echo="true">1st Gallery Item</h5>
+                                    <p wp-call-function="$image['description']" wp-call-function-set="content" wp-call-function-echo="true">Nullam id dolor id nibh ultricies vehicula.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <php>endforeach;</php>
+                        <!-- /.gallery-item-wrapper -->
+                        <div class="col-sm-6 col-xs-12 gallery-item-wrapper nature outside" wp-no-export>
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="http://placehold.it/800x600" class="img-responsive" alt="2nd gallery Thumb">
+                                    <div class="image-overlay"></div>
+                                    <a href="http://placehold.it/800x600" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="gallery-link"><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="gallery-details">
+                                    <h5>2nd gallery Item</h5>
+                                    <p>Nullam id dolor id nibh ultricies vehicula.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.gallery-item-wrapper -->
+                        <div class="col-sm-6 col-xs-12 gallery-item-wrapper photography artwork" wp-no-export>
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="http://placehold.it/800x600" class="img-responsive" alt="3rd gallery Thumb">
+                                    <div class="image-overlay"></div>
+                                    <a href="http://placehold.it/800x600" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="gallery-link"><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="gallery-details">
+                                    <h5>3rd gallery Item</h5>
+                                    <p>Nullam id dolor id nibh ultricies vehicula.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.gallery-item-wrapper -->
+                        <div class="col-sm-6 col-xs-12 gallery-item-wrapper creative nature" wp-no-export>
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="http://placehold.it/800x600" class="img-responsive" alt="4th gallery Thumb">
+                                    <div class="image-overlay"></div>
+                                    <a href="http://placehold.it/800x600" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="gallery-link"><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="gallery-details">
+                                    <h5>4th gallery Item</h5>
+                                    <p>Nullam id dolor id nibh ultricies vehicula.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.gallery-item-wrapper -->
+                    </div>
+                    <!-- /.isotope-gallery-container -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!--// End Gallery 1-3 -->
+        <!-- DIVIDING SPACE ( DON'T COPY THIS PART ) -->
+        <div class="content-block bg-deepocean">
+            <div class="container demo-title">
+                <h2 class="pull-left">Gallery 1-3</h2>
+                <h2 class="pull-right">END</h2>
+            </div>
+        </div>
+        <!--// END DIVIDING SPACE -->
+        <!-- Scripts at the end... you know the score! -->
+        <!-- Core Scripts -->
+        <script type="text/javascript" src="../common/js/jquery-1.11.1.min.js"></script>         
+        <script type="text/javascript" src="../common/js/bootstrap.min.js"></script>
+        <!-- Vendor Scripts -->
+        <script type="text/javascript" src="../common/js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+        <script>
+		$('.gallery-zoom').magnificPopup({ 
+			type: 'image'
+			// other options
+		});
+    </script>
+        <script type="text/javascript">
+		var $container = $('#isotope-gallery-container');
+		var $filter = $('.filter');
+		$(window).load(function () {
+		    // Initialize Isotope
+		    $container.isotope({
+		        itemSelector: '.gallery-item-wrapper'
+		    });
+		    $('.filter a').click(function () {
+		        var selector = $(this).attr('data-filter');
+		        $container.isotope({ filter: selector });
+		        return false;
+		    });
+		    $filter.find('a').click(function () {
+		        var selector = $(this).attr('data-filter');
+		        $filter.find('a').parent().removeClass('active');
+		        $(this).parent().addClass('active');
+		    });
+		});
+		$(window).smartresize(function () {
+		    $container.isotope('reLayout');
+		});
+	</script>
+    </body>
+</html>

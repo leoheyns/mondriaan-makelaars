@@ -1,0 +1,12 @@
+{
+    "name": "Pinegrow Web Designer",
+    "version": "2.951",
+    "main": "edit.html",
+    "no-edit-menu" : false,
+    "single-instance" : false,
+    "window": {
+        "title": "Pinegrow Web Editor",
+        "toolbar": false
+    },
+    "chromium-args" : "--enable-direct-write --allow-file-access-from-files"
+}

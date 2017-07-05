@@ -1,0 +1,144 @@
+<div data-pg-component="settings">
+    <form role="form">
+        <div class="checkbox">
+            <label class="control-label">
+                <input type="checkbox" class="backup">Save
+                <b>backup</b> files to _pgbackup folder, keep
+                <input style="width:50px;vertical-align:middle;" class="backup-revisions" /> revisions of each file.
+            </label>
+            <p class="help-block">If enabled Pinegrow saves copy of existing HTML or CSS file to _pgbackup folder before overwriting the original. You can turn this off if you're using source control to keep track of file revisions.</p>
+        </div>
+        <div class="checkbox">
+            <label class="control-label">
+                <input type="checkbox" class="show-placeholders">
+                <b>Show placeholders</b> on empty elements
+            </label>
+            <p class="help-block">Empty divs (and similar elements) have height 0px and are thus not visible on the page. Enable this option to apply min-height:100px to empty divs, sections and similar elements. This only affects how elements are shown in Pinegrow, display
+                in browser is not affected. Reload pages to apply the setting.</p>
+        </div>
+        <div class="checkbox">
+            <label class="control-label">
+                <input type="checkbox" class="auto-reloading">
+                <b>Auto-reload files</b> when changed outside of Pinegrow
+            </label>
+            <p class="help-block">HTML and .CSS/.LESS files will be auto-reloaded if modified in external editors.</p>
+        </div>
+        <div class="checkbox">
+            <label class="control-label">
+                <input type="checkbox" class="javascript-enabled">
+                <b>Enable Javascript</b> for pages opened in Pinegrow
+            </label>
+            <p class="help-block">Disable if Javascript code on edited pages causes crashes or performance problems. Javascript can also be enabled / disabled in Page menu of each individual page. Use page setting to change Javascript support for open pages.</p>
+        </div>
+        <div class="checkbox">
+            <label class="control-label">
+                <input type="checkbox" class="use-less">Use
+                <b>internal LESS parser</b>
+            </label>
+            <p class="help-block">Disable this if your LESS files use @import directive. Restart Pinegrow after changing this setting.</p>
+        </div>
+        <div class="checkbox">
+            <label class="control-label">
+                <input type="checkbox" class="keep-collapsed">
+                <b>Remember collapsed and hidden elements</b>
+            </label>
+            <p class="help-block">Keep data-pg-collapsed and data-pg-hidden attributes in saved files. data-pg-collapsed attribute is used to mark elements collapsed in the tree. data-pg-hidden attribute is used to mark elements that are hidden during editing in Pinegrow.</p>
+        </div>
+        <div class="checkbox">
+            <label class="control-label">
+                <input type="checkbox" class="disable-stats">Disable collecting 
+                <b>usage statistics</b>
+            </label>
+            <p class="help-block">Pinegrow is collecting a limited amount of usage data so that we better understand how users are using Pinegrow. That helps us to focus our development resources on the features that are actually useful. No personal data is collected.</p>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="formInputLocalhost">Internal Webserver hostname</label>
+            <input id="formInputLocalhost" class="form-control webserver-host" />
+            <p class="help-block">Pinegrow uses internal webserver to access local HTML files. Change the value if you experience problems with the default setting.</p>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="formInputPort">Internal Webserver ports</label>
+            <input id="formInputPort" class="form-control webserver-port" />
+            <p class="help-block">Pinegrow uses internal webserver to access local HTML files. Select a free port and make sure that incoming connections are not blocked by a firewall. Each Pinegrow window needs a free port. Each subsequent window will look for the first
+                free port above the one specified here.</p>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="formInputEditable">File types editable in Pinegrow</label>
+            <input id="formInputEditable" class="form-control file-types restart" placeholder=".html, .htm...">
+            <p class="help-block">Comma separated list of file extensions (with .) that can be edited in Pinegrow. For example: .html, .htm, NOEXT... (use NOEXT to make files without extension editable.)&nbsp;<b>These should be some kind of HTML files - NOT .js, .css, images...</b></p>
+        </div>
+        <!--
+    <div class="form-group">
+        <label class="control-label" for="formInputCodeEditor">Use external code editor</label>
+        <input id="formInputCodeEditor" class="form-control code-editor" />
+        <p class="help-block">Use {FILE} to specify file name in command line arguments. If not specified, file name will be appended to the command.</p>
+    </div>
+    -->
+        <div class="form-group">
+            <label class="control-label" for="formInput1">Code editor theme</label>
+            <select id="formInput1" class="form-control code-theme">
+                <option>default</option>
+                <option>ambiance</option>
+                <option>blackboard</option>
+                <option>eclipse</option>
+                <option>elegant</option>
+                <option>mbo</option>
+                <option>midnight</option>
+                <option>monokai</option>
+                <option>neat</option>
+            </select>
+            <p class="help-block">Select the theme that is used in page and element code view.</p>
+        </div>
+        <div class="checkbox">
+            <label class="control-label">
+                <input type="checkbox" class="code-autocomplete">
+                <b>Show auto-complete as you type</b> in code editor
+            </label>
+            <p class="help-block">Use CTRL + Space to show auto-complete suggestions in code editor when this option is turned off.</p>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="formInputCodeSize">Font size in Code editors</label>
+            <input id="formInputCodeSize" class="form-control code-size" />
+            <p class="help-block">Default is 12px. Don't forget to add px or another unit.</p>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="formInputCodeFont">Use custom font in Code editors</label>
+            <input id="formInputCodeFont" class="form-control code-font" />
+            <p class="help-block">Default is <code>'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace</code>. Use the font family name of a font installed on your computer.</p>
+        </div>
+        <div class="checkbox">
+            <label class="control-label">
+                <input type="checkbox" class="code-editor-emmet">Use Emmet in code editor (experimental)
+            </label>
+            <p class="help-block">Emmet has a couple of useful <a href="https://github.com/emmetio/codemirror#default-keybindings" class="external">HTML editing functions</a>.</p>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="formInput2">Code indent size</label>
+            <select id="formInput2" class="form-control html-indent-size">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>8</option>
+            </select>
+            <p class="help-block">Size of HTML code indent.</p>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="formInput3">Zoom UI</label>
+            <select id="formInput3" class="form-control ui-zoom">
+                <option value="-2">50%</option>
+                <option value="-1">75%</option>
+                <option value="0">100%</option>
+                <option value="1">125%</option>
+                <option value="2">150%</option>
+                <option value="4">200%</option>
+            </select>
+            <p class="help-block">Increase or decrease user interface size.</p>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="formInputBsCols">Number of Bootstrap columns</label>
+            <input id="formInputBsCols" class="form-control bootstrap-col-num" />
+            <p class="help-block">Usually 12, can be more if you're using customized Bootstrap.</p>
+        </div>
+    </form>
+</div>

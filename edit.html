@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Pinegrow Web Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+
+    <link href="lib/jqueryui/css/ui-lightness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+    <link href="bootstrap/less/bootstrap.css" rel="stylesheet">
+    <link href="lib/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/spectrum/spectrum.css" rel="stylesheet">
+    <link href="lib/crsa/crsa.browser.css" rel="stylesheet">
+    <link href="lib/autoComplete/style.css" rel="stylesheet">
+
+    <link href="lib/codemirror/lib/codemirror.css" rel="stylesheet">
+    <link href="lib/codemirror/addon/fold/foldgutter.css" rel="stylesheet">
+    <link href="lib/codemirror/addon/hint/show-hint.css" rel="stylesheet">
+    <link href="lib/codemirror/theme/ambiance.css" rel="stylesheet">
+    <link href="lib/codemirror/theme/blackboard.css" rel="stylesheet">
+    <link href="lib/codemirror/theme/eclipse.css" rel="stylesheet">
+    <link href="lib/codemirror/theme/elegant.css" rel="stylesheet">
+    <link href="lib/codemirror/theme/mbo.css" rel="stylesheet">
+    <link href="lib/codemirror/theme/midnight.css" rel="stylesheet">
+    <link href="lib/codemirror/theme/monokai.css" rel="stylesheet">
+    <link href="lib/codemirror/theme/neat.css" rel="stylesheet">
+    <link href="lib/codemirror/addon/dialog/dialog.css" rel="stylesheet">
+
+    <link href="lib/crsa/edit.css" rel="stylesheet">
+
+    <!--<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>-->
+
+    <script src="lib/less/less.js"></script>
+    <!--<script src="lib/sass/sass.js"></script>
+    <script src="lib/crsa/plugins/pg.sass.js"></script>-->
+
+    <script src="lib/jquery/jquery-2.2.3.min.js"></script>
+    <script src="lib/jqueryui/js/jquery-ui-1.10.3.custom.js"></script>
+    <script>
+        $.widget.bridge('uibutton', $.ui.button);
+        $.widget.bridge('uitooltip', $.ui.tooltip);
+
+        if(!console) {
+            console = {log: function() {}};
+        }
+    </script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/nestedSortable/jquery.mjs.nestedSortable.js"></script>
+    <script src="lib/autoComplete/autocomplete.js"></script>
+
+</head>
+
+<body>
+
+
+
+<script src="lib/crsa/css.helpers.js"></script>
+    <script src="lib/crsa/crsa.select.js"></script>
+    <script src="lib/crsa/crsa.undo.js"></script>
+    <script src="lib/crsa/crsa.css.js"></script>
+    <script src="lib/crsa/crsa.pages.js"></script>
+    <script src="lib/crsa/crsa.storage.js"></script>
+    <script src="lib/crsa/crsa.store.js"></script>
+    <script src="lib/crsa/crsa.project.js"></script>
+    <script src="lib/crsa/crsa.server.js"></script>
+    <script src="lib/crsa/pg.ui.js"></script>
+
+    <script src="lib/crsa/tools/pg.filewriter.js"></script>
+
+    <script src="lib/crsa/crsa.tree.js"></script>
+    <script src="lib/crsa/app.explainer.js"></script>
+    <script src="lib/crsa/crsa.tour.js"></script>
+    <script src="lib/spectrum/spectrum.js"></script>
+    <script src="lib/formathtml/formathtml.js"></script>
+
+    
+    <script>
+        require('nw.gui').Window.get().evalNWBin(null, 'lib/crsa/pinegrow.bin');
+    </script>
+
+    <script src="lib/crsa/pg-parser.js"></script>
+    <script src="lib/crsa/pg-query.js"></script>
+    <script src="lib/crsa/crsa.edit.js"></script>
+
+    <script src="frameworks/cssrules.js"></script>
+
+    <script src="frameworks/bootstrap3.3.7/bootstrap.js" id="plugin-bootstrap-3-3-7"></script>
+
+    
+    <script src="frameworks/blocks/pg.blocks.js" id="plugin-pg-blocks"></script>
+
+    <script src="frameworks/foundation5.5.3/foundation.js" id="plugin-foundation-5-5-3"></script>
+    <script src="frameworks/foundation6.2.3/foundation.js" id="plugin-foundation-6-2-3"></script>
+    <script src="frameworks/html/html.js" id="plugin-html"></script>
+    
+    <script src="frameworks/pg-angular/pg-angular.js" id="plugin-pg-angular"></script>
+
+    <script src="frameworks/960grid.js"></script>
+    <script src="frameworks/js.revolution.js"></script>
+    <script src="frameworks/pg.fontawesome.js"></script>
+
+    <script src="lib/crsa/plugins/pg.asset.manager.js"></script>
+    <!---->
+    <script src="lib/crsa/plugins/project-items.js"></script>
+    <script src="lib/crsa/plugins/code-validator.js"></script>
+    <script src="lib/crsa/plugins/pg.php.js"></script>
+    <script src="lib/crsa/plugins/pg.components/resource-editor.js"></script>
+    <script src="lib/crsa/plugins/pg.insight.js"></script>
+    <script src="lib/crsa/plugins/pg.power-bar.js"></script>
+    <script src="lib/crsa/plugins/pg.status.bar.js"></script>
+    
+    <script>
+        require('nw.gui').Window.get().evalNWBin(null, 'lib/crsa/plugins/pg.components.bin');
+    </script>
+
+
+    <script src="frameworks/materialize0.97.5/materialize.js" id="plugin-materialize-0-97-5"></script>
+    <!---->
+
+    <!---->
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+<script>
+    require('nw.gui').Window.get().evalNWBin(null, 'frameworks/pgwp/pgwp.bin');
+</script>
+
+
+
+
+
+<script>
+    require('nw.gui').Window.get().evalNWBin(null, 'lib/crsa/crsa.bin');
+</script>
+
+    <script src="lib/codemirror/lib/codemirror.js"></script>
+    <script src="lib/codemirror/addon/hint/show-hint.js"></script>
+    <script src="lib/codemirror/addon/hint/xml-hint.js"></script>
+    <script src="lib/codemirror/addon/hint/html-hint.js"></script>
+    <script src="lib/codemirror/addon/fold/foldcode.js"></script>
+    <script src="lib/codemirror/addon/fold/foldgutter.js"></script>
+    <script src="lib/codemirror/addon/fold/brace-fold.js"></script>
+    <script src="lib/codemirror/addon/fold/xml-fold.js"></script>
+    <script src="lib/codemirror/addon/edit/closetag.js"></script>
+    <script src="lib/codemirror/addon/fold/markdown-fold.js"></script>
+    <script src="lib/codemirror/addon/fold/comment-fold.js"></script>
+    <script src="lib/codemirror/mode/xml/xml.js"></script>
+    <script src="lib/codemirror/mode/javascript/javascript.js"></script>
+    <script src="lib/codemirror/mode/css/css.js"></script>
+    <script src="lib/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="lib/codemirror/mode/clike/clike.js"></script>
+    <script src="lib/crsa/pgphp/php.js"></script>
+    <script src="lib/codemirror/addon/search/match-highlighter.js"></script>
+    <script src="lib/codemirror/addon/search/search.js"></script>
+    <script src="lib/codemirror/addon/search/searchcursor.js"></script>
+    <script src="lib/codemirror/addon/dialog/dialog.js"></script>
+
+    <script src="lib/emmet/emmet.js"></script>
+
+    <script>
+        var qs = (function(a) {
+            if (a == "") return {};
+            var b = {};
+            for (var i = 0; i < a.length; ++i)
+            {
+                var p=a[i].split('=');
+                if (p.length != 2) continue;
+                b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+            }
+            return b;
+        })(window.location.search.substr(1).split('&'));
+
+        crsaProject = new CrsaProject();
+        var d = {
+            url : 'placeholders/',
+            name : 'Sample assets',
+            pages : []
+        };
+        for(var i = 1; i <= 9; i++) {
+            d.pages.push({src: 'img' + i + '.jpg', image: 'img' + i + '.jpg'});
+        }
+        crsaProject.fromSimpleTemplate(d);
+
+        window.crsaStorage = new CrsaLocalStorage();
+
+        $(function() {
+
+            var pages = [
+            ];
+
+            for(var i = 0; i < 10; i++) {
+                var key = i == 0 ? 'page' : 'page' + i;
+                var page = key in qs ? qs[key] : null;
+                if(page) {
+                    pages.push({name: 'Page', src: page})
+                }
+            }
+
+            $('body').crsa({
+                pages : pages,
+                templates : []
+            });
+
+        });
+
+        if(isApp()) {
+        } else {
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-344271-72', 'pinegrow.com');
+        }
+        gaSendPageView();
+
+    </script>
+
+
+
+</body></html>
